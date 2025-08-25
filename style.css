@@ -1,0 +1,367 @@
+body {
+    background-image: url('ThreePyramidsNight.jpg');
+    background-size: 100%;
+    animation: step-end 0.2s linear 0.8s infinite;
+    overflow: hidden;
+}
+
+.searchBox:focus {
+    outline-width: 0;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 8%;
+
+}
+
+@keyframes sheen {
+    100% {
+        transform: rotateZ(60deg) translate(1em, -9em);
+
+    }
+}
+
+
+.searchBox {
+    background-color: rgba(163, 211, 203, 0.938);
+    text-transform: capitalize;
+    background-size: 40%;
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    padding: 1% 2%;
+    width: 502px;
+    height: 36px;
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+    box-shadow: 2px 3px 9px 5px blue;
+    transition: 0.3s;
+    transition-duration: .2s;
+
+}
+
+.searchBox:hover {
+    filter: drop-shadow(0 0 10px rgb(28, 165, 165));
+    background-color: rgba(102, 245, 226, 0.836);
+    background-size: 40%;
+    text-transform: capitalize;
+    border: none;
+    padding: 1% 2%;
+    width: 502px;
+    height: 36px;
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+    box-shadow: 3px 4px 10px 6px blue;
+    transition: 0.3s;
+    transition-duration: .2s;
+
+}
+
+.resultBox {
+    width: 160px;
+    height: 150px;
+    border-radius: 6%;
+    background-image: url('OIP (5).jpg');
+    background-size: cover;
+    margin: 2%;
+    padding: 3%;
+    opacity: 85%;
+    box-shadow: 2px 2px 9px 5px rgba(228, 127, 55, 0.575);
+    transition: 1s;
+    transition-duration: 1s;
+    color: #fff;
+}
+
+.current__state {
+    display: block;
+    margin-top: -25%;
+}
+
+.airMood {
+    margin-left: 10%;
+}
+
+.header {
+    display: flex;
+}
+
+.dayNight__mood {
+    margin-left: 75%;
+    cursor: pointer;
+    text-shadow: 3px 4px 9px rgba(64, 61, 209, 0.822);
+
+}
+
+.dayNight__mood:hover {
+    margin-left: 75%;
+    cursor: pointer;
+    text-shadow: 3px 4px 9px rgba(64, 61, 209, 0.822);
+
+}
+
+.name .nameA {
+    margin: 10%;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    text-shadow: 3px 4px 9px coral;
+
+}
+
+.details {
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 1px black, 2px 2px 1px black !important;
+    opacity: 80%;
+}
+
+.details:hover {
+    text-decoration: none;
+    font-size: 100%;
+    color: rgba(226, 147, 45, 0.897);
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.temp {
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+.cityName {
+    border-radius: 100px;
+    font-size: x-large;
+    margin-top: -8%;
+    text-transform: capitalize;
+    text-shadow: 2px 3px 5px #ffff, 3px 2px 5px #fff;
+    font-weight: 800;
+
+}
+
+.countryName {
+    border-radius: 100px;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 5px #ffff, 3px 2px 5px #fff;
+    font-weight: 800;
+
+}
+
+.producer {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: rgb(226, 123, 85);
+    box-shadow: 5px 6px 10px rgb(204, 40, 40);
+}
+
+.Fspan {
+    color: rgba(5, 243, 243, 0.973);
+    font-size: x-large;
+}
+
+.Lspan {
+
+    color: rgb(207, 37, 37);
+    border-radius: 10px;
+    font-size: x-large;
+}
+
+.skyMood {
+    font-size: x-large;
+    margin-left: 5%;
+    margin-top: -10%;
+    text-shadow: 2px 3px 6px #fff, 2px 3px 8px #ffff;
+}
+
+.date {
+    display: flex;
+    color: antiquewhite;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 41%;
+    margin-bottom: -8%;
+    text-shadow: 4px 5px 8px rgb(224, 56, 56);
+    text-transform: capitalize;
+}
+
+.dark {
+    background-image: url('ThreePyramidsDay.jpg');
+    background-size: 105%;
+    transition: 1s;
+    transition-duration: 2s;
+
+    .resultBox {
+        background-color: burlywood;
+    }
+
+
+}
+
+.moonMood {
+    width: 3.2%;
+    height: 45px;
+    background-image: url("sun.png");
+    margin-left: 80%;
+    margin-top: 2%;
+    cursor: pointer;
+    transition-duration: 2s;
+}
+
+.moonToSun {
+    cursor: pointer;
+    background-image: url('moon.png');
+    transition: 1s;
+    transition-duration: 2s;
+    text-shadow: 3px 4px 10px rgba(182, 76, 76, 0.89);
+    transition-duration: 2s;
+
+}
+
+
+
+/* ***************************************************************************************** */
+
+.CloudsPic {
+    background-image: url('weatherPics/cloudy\ pic.jpg');
+    background-size: cover;
+
+    .cityName,
+    .countryName,
+    .skyMood {
+        color: #ffff;
+        text-shadow: 2px 3px 5px black, 3px 2px 5px black;
+        font-weight: 800;
+    }
+}
+
+
+.RainPic {
+    background-image: url('weatherPics/rainy.jpg');
+    background-size: cover;
+
+    .cityName,
+    .countryName,
+    .skyMood {
+        color: #fff;
+        text-shadow: 2px 3px 5px black, 3px 2px 5px black;
+        font-weight: 800;
+    }
+
+}
+
+.SnowPic {
+    background-image: url('weatherPics/snowfall\ pic.jpg');
+    background-size: cover;
+
+    .cityName,
+    .countryName,
+    .skyMood {
+        color: black;
+        text-shadow: 2px 3px 5px #ffff, 3px 2px 5px #fff;
+        font-weight: 800;
+    }
+
+}
+
+.MistPic {
+    background-image: url('weatherPics/mist\ pic.jpg');
+    background-size: cover;
+
+    .cityName,
+    .countryName,
+    .skyMood {
+        color: black;
+        text-shadow: 2px 3px 5px #ffff, 3px 2px 5px #fff;
+        font-weight: 800;
+    }
+
+}
+
+.ClearPic {
+    background-image: url('weatherPics/clear\ pic.jpg');
+    background-size: cover;
+
+    .cityName,
+    .countryName,
+    .skyMood {
+        color: black;
+        text-shadow: 2px 3px 5px #ffff, 3px 2px 5px #fff;
+        font-weight: 800;
+    }
+
+}
+
+.ErrorInput {
+    box-shadow: inset -3px -3px 15px 8px rgba(228, 15, 15, 0.822);
+}
+
+
+.detailsDiv {
+    display: block;
+    width: 1px;
+    height: 1px;
+    margin-top: -14%;
+    margin-left: 23%;
+    inset: 0;
+    background-color: rgb(38, 116, 168);
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    transition-duration: 1.5s;
+    visibility: hidden;
+}
+
+.openClose {
+
+
+    width: 500px;
+    height: 250px;
+
+    opacity: 80%;
+    transition-duration: 1.5s;
+    visibility: visible;
+
+    .avgTemp,
+    .weatherDescribtion,
+    .humidity,
+    .pressure,
+    .windSpeed {
+        transition-delay: 1s;
+        visibility: visible;
+    }
+
+}
+
+.avgTemp {
+    font-size: 40px;
+}
+
+.avgTemp,
+.weatherDescribtion,
+.humidity,
+.pressure,
+.windSpeed {
+    display: flex;
+    inset: 0;
+    position: relative;
+    margin: auto;
+    margin-top: 4%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #ffff;
+    visibility: hidden;
+}
